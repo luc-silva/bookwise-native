@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import BookCard from "./BookCard";
 import { useHomeContext } from "./context";
 import { useApplicationContext } from "@/src/context/Application";
-import LoadingOverlay from "./BookStats/LoadingOverlay";
+import LoadingOverlay from "@/src/components/LoadingOverlay";
 
 export default function Home() {
     const styles = useStyle();

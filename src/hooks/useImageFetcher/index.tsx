@@ -7,10 +7,12 @@ export default function useImageFetcher(user: IUser | null) {
 
     const [isImageLoading, setIsImageLoading] = useState(false);
     const [isImageError, setIsImageError] = useState(false);
-    const getImage = useCallback(async (imageId: string) => {
-        console.log({ imageId });
-        return await securedApi.get(routes.image.paths.getImage(imageId));
-    }, []);
+    const getImage = useCallback(
+        async (imageId: string) => {
+            return await securedApi.get(routes.image.paths.getImage(imageId));
+        },
+        [securedApi]
+    );
 
     const loadImage = useCallback(
         async (id: string) => {

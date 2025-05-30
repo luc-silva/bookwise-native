@@ -1,10 +1,10 @@
-import { View, Text, ActivityIndicator } from "react-native";
+import { View, Text } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import useStyle from "./styles";
 import { useEffect } from "react";
 import { useHomeContext } from "../context";
-import ErrorOverlay from "./ErrorOverlay";
-import LoadingOverlay from "./LoadingOverlay";
+import ErrorOverlay from "../../../components/ErrorOverlay";
+import LoadingOverlay from "@/src/components/LoadingOverlay";
 
 type BookStatsProps = {
     user: ILoginResponse | null;
