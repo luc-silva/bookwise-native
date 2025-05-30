@@ -106,7 +106,7 @@ export default function useStyle() {
         },
         footerIconLabel: {
             fontSize: 12,
-            color: "#6b7280", // gray-500
+            color: "#6b7280",
             marginTop: 2,
             fontWeight: "500",
             letterSpacing: 0.2,

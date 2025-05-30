@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native";
 export default function useStyle() {
     return StyleSheet.create({
         container: {
-    flex: 1, // Adicione esta linha!
-    padding: 24,
-    alignItems: "center",
-    backgroundColor: "#f5f6fa",
-},
+            flex: 1,
+            padding: 24,
+            alignItems: "center",
+            backgroundColor: "#f5f6fa",
+        },
         cover: {
             width: 160,
             height: 220,
